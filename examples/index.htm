@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>CacheIt Examples</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF">
+<p><font face="Arial, Helvetica, sans-serif"><br>
+  If you copy over the contents of the entire CacheIt package to your webserver, 
+  and your webserver accepts files of type .php and .phps you will be able to 
+  run the examples. If you have problems running these examples, don't worry, 
+  they're still very helpful and with the documentation, should be all you need 
+  to get up and running with CacheIt.</font><br>
+</p>
+<p><font face="Arial, Helvetica, sans-serif" size="2">Please be sure to read the 
+  <a href="file:///C%7C/My%20Documents/Proj/PHP/class.CacheIt.php/3.0/documents/readme.htm">documentation</a> 
+  (it really helps).</font><br>
+</p>
+<table border="0" cellspacing="0" cellpadding="15">
+  <tr> 
+    <td nowrap><font face="Arial, Helvetica, sans-serif"><a href="example1/index.php">Example 
+      1</a></font></td>
+    <td><font face="Arial, Helvetica, sans-serif">Your basic do nothing example. 
+      In this example, the module merely returns the line of text "<i>This is 
+      a test CacheIt.</i>" Uses <a href="modules/module1.phps">module1.php</a> 
+      and <a href="example1/index.phps">index.php</a></font></td>
+  </tr>
+  <tr> 
+    <td><font face="Arial, Helvetica, sans-serif"><a href="example2/index.htm">Example 
+      2</a></font></td>
+    <td><font face="Arial, Helvetica, sans-serif">This example was created to 
+      show you how to deal with variable input both from the user and for your 
+      module. With this example, you will be presented with a form to input your 
+      name. Once you submit the form, the following page will display &quot;<i>Your 
+      name is {name}</i>&quot;. Uses <a href="modules/module2.phps">module2.php</a> 
+      and <a href="example2/index2.phps">index2.php</a></font></td>
+  </tr>
+  <tr> 
+    <td><font face="Arial, Helvetica, sans-serif"><a href="example3/index.htm">Example 
+      3</a></font></td>
+    <td><font face="Arial, Helvetica, sans-serif">This example demonstrates how 
+      to use the runtime memory for displaying the same CacheIt data multiple 
+      times on the same page. Notice the 1 after the -1 in the disp_file. The 
+      1 signifies that CacheIt should keep that data in memory until the script 
+      is completed. Uses <a href="modules/module2.phps">module2.php</a> and <a href="example3/index2.phps">index2.php</a></font></td>
+  </tr>
+  <tr> 
+    <td><font face="Arial, Helvetica, sans-serif"><a href="example4/index.htm">Example 
+      4</a></font></td>
+    <td><font face="Arial, Helvetica, sans-serif">This example demonstrates the 
+      exact same concept as in example 3, BUT... it uses module2 a third time 
+      to produce different output data (and a different cache file). Uses <a href="modules/module2.phps">module2.php</a> 
+      and <a href="example4/index2.phps">index2.php</a></font></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p><font face="Arial, Helvetica, sans-serif" size="2">Please note that all of 
+  these examples use a time_out of -1 to stop the module from writing out a cache 
+  file. In a production environment, you probably don't want to do this since 
+  it defeats the purpose of CacheIt. Please refer to the manual for further information.</font></p>
+</body>
+</html>
